@@ -34,15 +34,15 @@ class _01_SwappingDigits {
 	// 2. Complete the method so that it sorts the array using a bubble sort.
 	// Iterate through the array and when you find two elements that are out
 	// of order, swap them. Repeat this until the array is in order.
-	public static void sortIntArray(int[] arr) {
+	public static void sortIntArray(int[] array) {
 
-		for (int j = 0; j < arr.length; j++) {
-			for (int i = 0; i < arr.length - 1; i++) {
+		for (int j = 0; j < array.length; j++) {
+			for (int i = 0; i < array.length - 1; i++) {
 
-				if (arr[i] > arr[i + 1]) {
-					int tempInt = arr[i];
-					arr[i] = arr[i + 1];
-					arr[i + 1] = tempInt;
+				if (array[i] > array[i + 1]) {
+					int tempInt = array[i];
+					array[i] = array[i + 1];
+					array[i + 1] = tempInt;
 				}
 
 			}
